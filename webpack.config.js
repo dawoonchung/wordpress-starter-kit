@@ -9,6 +9,7 @@ const webpack = require('webpack');
 module.exports = (env, argv) => ({
   entry: {
     main: path.resolve(__dirname, 'src/index.js'),
+    style: path.resolve(__dirname, 'src/style.js'),
     admin: path.resolve(__dirname, 'src/admin.js'),
     woocommerce: path.resolve(__dirname, 'src/woocommerce.js'),
   },
@@ -94,8 +95,8 @@ module.exports = (env, argv) => ({
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[name].chunk.css',
+      filename: '../[name].css',
+      chunkFilename: '../[name].chunk.css',
     }),
     // In case you use moment.js
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
