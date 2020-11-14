@@ -1,0 +1,10 @@
+@import 'functions';
+@import 'variables';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import 'mixins';
+
+body {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
