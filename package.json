@@ -55,7 +55,7 @@
   "scripts": {
     "start": "webpack --config webpack.config.js --mode development --watch",
     "build": "webpack --config webpack.config.js --mode production",
-    "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .babelrc.js .eslintrc.js .stylelintrc.js .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src style.css.map webpack.config.js yarn.lock"
+    "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .babelrc.js .eslintrc.js .stylelintrc.js .wp-env.json .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src style.css.map webpack.config.js yarn.lock"
   },
   "browserslist": {
     "production": [
