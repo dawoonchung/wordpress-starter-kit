@@ -16,7 +16,6 @@ module.exports = (env, argv) => ({
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].js',
-    chunkFilename: '[id].chunk.js',
   },
   module: {
     rules: [
@@ -96,7 +95,6 @@ module.exports = (env, argv) => ({
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '../[name].css',
-      chunkFilename: '../[name].chunk.css',
     }),
     // In case you use moment.js
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
@@ -135,7 +133,6 @@ module.exports = (env, argv) => ({
       }),
     ],
     splitChunks: {
-      chunks: 'all',
       name: false,
     },
     runtimeChunk: {
